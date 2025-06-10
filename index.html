@@ -1,95 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aarvyathreads | Fashion Designs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarvya Threads | Fashion Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
       color: #333;
     }
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
       text-align: center;
+      padding: 3rem 1rem 1rem;
+      background-color: #fff5f0;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
     }
     nav {
-      text-align: center;
-      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #fbeee6;
     }
     nav a {
-      margin: 0 15px;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
+      color: #222;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a17e6f;
     }
     .hero {
-      background: url('https://via.placeholder.com/1200x400?text=Aarvyathreads+Fashion+Designs') center/cover no-repeat;
-      height: 400px;
+      background: url('https://via.placeholder.com/1600x500?text=Aarvya+Threads+Collection') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      letter-spacing: 1.5px;
     }
     section {
-      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 1rem;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
       text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
     }
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
     .gallery img {
-      width: 250px;
-      height: 350px;
-      object-fit: cover;
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     footer {
-      background-color: #000;
-      color: #fff;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #fbeee6;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Aarvyathreads</h1>
-    <p>Fashion | Style | Expression</p>
+    <h1>Aarvya Threads</h1>
+    <p>Elegant | Timeless | Unique</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#collection">Collection</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero"></div>
+  <div class="hero">
+    Discover Our New Arrivals
+  </div>
 
   <section id="about">
-    <h2>About Aarvyathreads</h2>
-    <p>Aarvyathreads is your destination for unique and modern fashion designs blending elegance and cultural charm.</p>
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      Aarvya Threads curates fashion pieces that blend modern silhouettes with rich cultural roots. We focus on craftsmanship, sustainability, and elegance in every stitch.
+    </p>
   </section>
 
-  <section id="gallery">
-    <h2>Our Designs</h2>
+  <section id="collection">
+    <h2>Our Collection</h2>
     <div class="gallery">
-      <img src="https://via.placeholder.com/250x350?text=Design+1" alt="Design 1">
-      <img src="https://via.placeholder.com/250x350?text=Design+2" alt="Design 2">
-      <img src="https://via.placeholder.com/250x350?text=Design+3" alt="Design 3">
+      <img src="https://via.placeholder.com/400x550?text=Style+1" alt="Style 1">
+      <img src="https://via.placeholder.com/400x550?text=Style+2" alt="Style 2">
+      <img src="https://via.placeholder.com/400x550?text=Style+3" alt="Style 3">
+      <img src="https://via.placeholder.com/400x550?text=Style+4" alt="Style 4">
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@aarvyathreads.com</p>
+    <h2>Contact</h2>
+    <p style="text-align: center;">
+      📧 Email: contact@aarvyathreads.com<br>
+      📍 Location: India (Worldwide shipping coming soon)<br>
+      📷 Instagram: @aarvyathreads
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Aarvyathreads. All rights reserved.</p>
+    <p>&copy; 2025 Aarvya Threads. All rights reserved.</p>
   </footer>
 </body>
 </html>
